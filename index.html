@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find your somewhere. Solace curates thoughtful stays for slower, more meaningful travel."
+    />
+    <meta name="theme-color" content="#f6f5f0" />
+    <title>Solace — Find your somewhere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#" aria-label="Solace home">solace<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="menu-toggle-label">Menu</span>
+        <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#stays">Our stays</a>
+        <a href="#story">Our story</a>
+        <a href="#newsletter">Journal</a>
+        <a class="nav-cta" href="#stays">Find your stay <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> A softer way to get away</p>
+          <h1 id="hero-title">Find your<br />some<span class="italic-word">where.</span></h1>
+          <div class="hero-bottom">
+            <p class="hero-description">
+              Not just a place to stay.<br />
+              A place to feel a little more like you.
+            </p>
+            <a class="round-link" href="#stays" aria-label="Explore our stays">
+              <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image" role="img" aria-label="A quiet Mediterranean home framed by trees">
+          <div class="image-label"><span>01</span> &nbsp; somewhere in Puglia, Italy</div>
+          <div class="image-note">
+            <span class="note-mark" aria-hidden="true">✦</span>
+            <span>Good things<br />take their time.</span>
+          </div>
+          <div class="image-count">A collection of 28 places</div>
+        </div>
+        <div class="hero-side-note" aria-hidden="true">TAKE THE LONG WAY HOME</div>
+      </section>
+
+      <section class="intro section-wrap" id="story">
+        <p class="eyebrow">A little less, a little better</p>
+        <div class="intro-content">
+          <h2>For the days you<br />want to <em>remember.</em></h2>
+          <div class="intro-aside">
+            <p>
+              The best trips don’t ask much of you. Just that you show up, slow down, and let
+              somewhere new feel like your own.
+            </p>
+            <a class="text-link" href="#stays">A note on how we choose <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="stays-section section-wrap" id="stays">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">A few places to begin</p>
+            <h2>Somewhere <em>good.</em></h2>
+          </div>
+          <a class="text-link stays-link" href="#newsletter">See all stays <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="stay-grid">
+          <a class="stay-card stay-card-large" href="#newsletter">
+            <div class="stay-image stay-image-coast" role="img" aria-label="Quiet blue water along the Mediterranean coast"></div>
+            <div class="stay-meta"><span>Puglia, Italy</span><span>From $240 / night</span></div>
+            <h3>Casa di Sale <span aria-hidden="true">↗</span></h3>
+            <p>Sea air, long lunches, nowhere else to be.</p>
+          </a>
+          <a class="stay-card stay-card-small" href="#newsletter">
+            <div class="stay-image stay-image-forest" role="img" aria-label="A cabin nestled in a green forest"></div>
+            <div class="stay-meta"><span>Sintra, Portugal</span><span>From $185 / night</span></div>
+            <h3>The Greenhouse <span aria-hidden="true">↗</span></h3>
+            <p>For finding quiet in the green.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="quote-section">
+        <div class="quote-inner">
+          <p class="eyebrow">A thought to take with you</p>
+          <blockquote>“Somewhere between the deep breath and the unhurried morning, you find your way back.”</blockquote>
+          <p class="quote-credit">— A Solace thought</p>
+          <span class="quote-sun" aria-hidden="true">✦</span>
+        </div>
+      </section>
+
+      <section class="newsletter section-wrap" id="newsletter">
+        <div>
+          <p class="eyebrow">Letters from somewhere</p>
+          <h2>A little room<br />to <em>wander.</em></h2>
+        </div>
+        <div class="newsletter-form-wrap">
+          <p>Occasional notes on places, people, and taking the scenic route.</p>
+          <form class="newsletter-form">
+            <label class="sr-only" for="email-address">Your email address</label>
+            <input id="email-address" name="email" type="email" placeholder="Your email address" required />
+            <button type="submit" aria-label="Subscribe to the newsletter">↗</button>
+          </form>
+          <p class="form-message" aria-live="polite">A good email, every now and then. No noise.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark" href="#" aria-label="Solace home">solace<span>.</span></a>
+      <p>For wherever you are, and wherever you’re going.</p>
+      <span>© 2026 Solace Travel Co.</span>
+    </footer>
+  </body>
+</html>
